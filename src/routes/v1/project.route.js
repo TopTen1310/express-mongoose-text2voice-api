@@ -5,7 +5,8 @@ const projectController = require('../../controllers/project.controller');
 const projectValidation = require('../../validations/project.validation');
 const router = express.Router();
 
-router.post('/text2voice', auth(), validate(projectValidation.text2Voice), projectController.generateVoiceFromText)
+// router.post('/text2voice', auth(), validate(projectValidation.text2Voice), projectController.generateVoiceFromText)
+router.post('/text2voice', validate(projectValidation.text2Voice), projectController.generateVoiceFromText)
 
 module.exports = router;
 

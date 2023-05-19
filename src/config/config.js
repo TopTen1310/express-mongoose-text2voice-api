@@ -61,4 +61,5 @@ module.exports = {
     },
     from: envVars.EMAIL_FROM,
   },
+  ttsfree_apikey: envVars.TTSFREE_API_KEY,
 };
